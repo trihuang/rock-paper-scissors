@@ -12,16 +12,35 @@ const playerScoreBoard = document.querySelector('.player-score .rectangle');
 const computerScoreBoard = document.querySelector('.computer-score .rectangle');
 const result = document.querySelector('.subtext');
 
+const resetButton = document.querySelector('.reset');
+
 rock.addEventListener('click', function () {
-    if (!isGameOver()) playRound('rock');
+    if (!isGameOver()) playRound('rock')
+    else {
+        result.textContent = "Please press the reset button to start another game.";
+    };
 });
 
 paper.addEventListener('click', function() {
-    if (!isGameOver()) playRound('paper');
+    if (!isGameOver()) playRound('paper')
+    else {
+        result.textContent = "Please press the reset button to start another game.";
+    };
 });
 
 scissors.addEventListener('click', function() {
-    if (!isGameOver()) playRound('scissors');
+    if (!isGameOver()) playRound('scissors')
+    else {
+        result.textContent = "Please press the reset button to start another game.";
+    };
+});
+
+resetButton.addEventListener('click', function() {
+    result.textContent = "Play against the computer! The first to get 5 points wins!";
+    playerScoreBoard.textContent = 0;
+    computerScoreBoard.textContent = 0;
+    playerScore = 0;
+    computerScore = 0;
 });
 
 // Gets the computer's choice of rock, paper, or scissors

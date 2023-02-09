@@ -33,7 +33,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .text,
@@ -48,4 +48,8 @@ img {
     border-radius: 8px;
     padding: 20px;
     margin-top: 8px;
+}
+
+.reset {
+    margin-top: 20px;
 }
