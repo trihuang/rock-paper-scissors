@@ -22,11 +22,18 @@ body {
 img {
     width: 250px;
     height: 250px;
+    opacity: 1;
+    transition: 1s ease;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: 1s ease;
 }
 
 .score-boards {
