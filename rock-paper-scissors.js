@@ -1,6 +1,11 @@
-// A simple program that allows the user to play rock paper scissors against the computer from the console.
+// A simple program that allows the user to play rock paper scissors against the computer.
 
-let choices = ['Rock', 'Paper', 'Scissors'];
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+const choices = ['Rock', 'Paper', 'Scissors'];
+
 
 // Gets the computer's choice of rock, paper, or scissors
 function getComputerChoice(choices) {
