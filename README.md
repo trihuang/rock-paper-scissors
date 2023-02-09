@@ -1,1 +1,1 @@
-# rock-paper-scissors
+A simple program that allows the user to play rock paper scissors from the console.
